@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Producer | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                </div>
+                <div class="terminal-title">game_producer@portfolio:~</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">~/home</a></li>
+                    <li><a href="#about">~/about</a></li>
+                    <li><a href="#experience">~/experience</a></li>
+                    <li><a href="#projects">~/projects</a></li>
+                    <li><a href="#contact">~/contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="active-section">
+                <div class="terminal-content">
+                    <div class="typing-animation">
+                        <span class="prompt">$</span> <span class="command">whoami</span>
+                        <div class="response">
+                            <h1>Game Producer</h1>
+                            <p class="subtitle">Crafting Interactive Experiences for <span class="highlight">10+ Years</span></p>
+                        </div>
+                        <span class="prompt">$</span> <span class="command">cat skills.txt</span>
+                        <div class="response skills">
+                            <span class="skill">Game Design</span>
+                            <span class="skill">Project Management</span>
+                            <span class="skill">Team Leadership</span>
+                            <span class="skill">Agile/Scrum</span>
+                            <span class="skill">Game Development</span>
+                            <span class="skill">Quality Assurance</span>
+                            <span class="skill">Budget Planning</span>
+                            <span class="skill">Risk Management</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="terminal-content">
+                    <span class="prompt">$</span> <span class="command">cat about.md</span>
+                    <div class="response">
+                        <h2>~/about</h2>
+                        <div class="about-content">
+                            <div class="about-text">
+                                <p>Professional game producer with over a decade of experience in the gaming industry. I've led teams to deliver AAA titles and innovative mobile experiences that have captured the hearts of gamers worldwide.</p>
+                                <p>In my free time, I develop indie games as a passion project, experimenting with new gameplay mechanics and storytelling techniques.</p>
+                                <p>I thrive in the intersection of creativity and technology, constantly pushing the boundaries of what's possible in interactive entertainment.</p>
+                            </div>
+                            <div class="stats">
+                                <div class="stat">
+                                    <div class="stat-value">10+</div>
+                                    <div class="stat-label">Years in Industry</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">20+</div>
+                                    <div class="stat-label">Shipped Titles</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">5+</div>
+                                    <div class="stat-label">Indie Projects</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <div class="terminal-content">
+                    <span class="prompt">$</span> <span class="command">ls -la experience/</span>
+                    <div class="response">
+                        <h2>~/experience</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 - Present</div>
+                                <div class="timeline-content">
+                                    <h3>Senior Game Producer</h3>
+                                    <p class="company">Epic Games Studio</p>
+                                    <p>Leading a team of 25+ developers to create next-generation console and PC games.</p>
+                                    <ul>
+                                        <li>Orchestrated the successful launch of "Quantum Breach" with 2M+ first-week sales</li>
+                                        <li>Implemented agile methodologies that increased team productivity by 35%</li>
+                                        <li>Managed $15M+ production budget with consistent on-time, on-budget delivery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2015 - 2020</div>
+                                <div class="timeline-content">
+                                    <h3>Game Producer</h3>
+                                    <p class="company">Nova Interactive</p>
+                                    <p>Produced multiple mobile and console titles with cumulative 50M+ downloads.</p>
+                                    <ul>
+                                        <li>Spearheaded the company's transition to live service games</li>
+                                        <li>Coordinated cross-functional teams across 3 international studios</li>
+                                        <li>Secured key licensing partnerships with major entertainment brands</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2010 - 2015</div>
+                                <div class="timeline-content">
+                                    <h3>Associate Producer</h3>
+                                    <p class="company">Gameverse Studios</p>
+                                    <p>Cut my teeth on AAA game production for PlayStation and Xbox platforms.</p>
+                                    <ul>
+                                        <li>Assisted in the production of 2 award-winning action RPG titles</li>
+                                        <li>Managed QA processes and certification requirements</li>
+                                        <li>Coordinated localization efforts for releases in 12 languages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="terminal-content">
+                    <span class="prompt">$</span> <span class="command">find ./projects -type f -name "*.game" | sort</span>
+                    <div class="response">
+                        <h2>~/projects</h2>
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h3>Quantum Breach</h3>
+                                    <span class="project-tag professional">Professional</span>
+                                </div>
+                                <p>Action-adventure title for PC and next-gen consoles with groundbreaking physics engine.</p>
+                                <div class="project-tech">
+                                    <span>Unreal Engine 5</span>
+                                    <span>PC/Console</span>
+                                    <span>AAA</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h3>Stellar Command</h3>
+                                    <span class="project-tag professional">Professional</span>
+                                </div>
+                                <p>Space strategy game with innovative resource management and diplomacy systems.</p>
+                                <div class="project-tech">
+                                    <span>Unity</span>
+                                    <span>Mobile/PC</span>
+                                    <span>Multiplayer</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h3>Neon Descent</h3>
+                                    <span class="project-tag hobby">Hobby</span>
+                                </div>
+                                <p>Cyberpunk roguelike with procedurally generated levels and permadeath mechanics.</p>
+                                <div class="project-tech">
+                                    <span>Godot</span>
+                                    <span>PC</span>
+                                    <span>Indie</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h3>Pixel Kingdoms</h3>
+                                    <span class="project-tag hobby">Hobby</span>
+                                </div>
+                                <p>Retro-style kingdom builder with deep simulation elements and emergent storytelling.</p>
+                                <div class="project-tech">
+                                    <span>GameMaker Studio</span>
+                                    <span>PC/Mobile</span>
+                                    <span>Simulation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="terminal-content">
+                    <span class="prompt">$</span> <span class="command">echo "Let's connect" > /dev/contact</span>
+                    <div class="response">
+                        <h2>~/contact</h2>
+                        <div class="contact-container">
+                            <p>Interested in collaboration or just want to chat about games? Reach out through any of these channels:</p>
+                            <div class="contact-links">
+                                <a href="mailto:contact@gameproducer.dev" class="contact-link">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>contact@gameproducer.dev</span>
+                                </a>
+                                <a href="https://linkedin.com/in/gameproducer" target="_blank" class="contact-link">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>linkedin.com/in/gameproducer</span>
+                                </a>
+                                <a href="https://twitter.com/gameproducer" target="_blank" class="contact-link">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>@gameproducer</span>
+                                </a>
+                                <a href="https://github.com/gameproducer" target="_blank" class="contact-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>github.com/gameproducer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="terminal-prompt">
+                <span class="prompt">$</span> <span class="typing-cursor">|</span>
+            </div>
+            <div class="footer-text">
+                <p>Designed and coded with <span class="heart">♥</span> and a lot of <span class="coffee">☕</span></p>
+                <p>&copy; <span id="current-year">2025</span> Longmaba. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="background">
+        <div class="matrix-rain" id="matrix-canvas"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
