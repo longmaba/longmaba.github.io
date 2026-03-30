@@ -2,275 +2,504 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Producer | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Long Le — Game Producer & AI Builder</title>
+  <meta name="description"
+    content="Portfolio of Long Le — a game producer with 10+ years of experience shipping titles like WWE Champions and Thrill of the Fight 2, and builder of AI-powered apps.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="terminal-header">
-                <div class="terminal-buttons">
-                    <span class="terminal-button red"></span>
-                    <span class="terminal-button yellow"></span>
-                    <span class="terminal-button green"></span>
-                </div>
-                <div class="terminal-title">game_producer@portfolio:~</div>
+  <!-- Ambient background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="wrapper">
+    <!-- ========== NAV ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <a href="#hero" class="nav-logo">Long Le</a>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Games</a>
+          <a href="#ai-apps">AI Apps</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+      <div class="hero-shapes" aria-hidden="true">
+        <div class="hero-shape hero-shape-1" data-parallax="0.03"></div>
+        <div class="hero-shape hero-shape-2" data-parallax="0.05"></div>
+        <div class="hero-shape hero-shape-3" data-parallax="0.02"></div>
+        <div class="hero-shape hero-shape-4" data-parallax="0.06"></div>
+      </div>
+
+      <div class="section-inner">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Long <span class="accent">Le</span></h1>
+            <p class="hero-title">Game Producer & AI App Builder</p>
+            <p class="hero-desc">
+              10+ years crafting interactive experiences — from AAA mobile hits to VR fighting games. 
+              Now building AI-powered apps that solve real problems.
+            </p>
+            <div class="hero-cta-row">
+              <a href="#projects" class="btn-primary">
+                View My Work <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn-outline">
+                Get In Touch <i class="fas fa-paper-plane"></i>
+              </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home" class="active">~/home</a></li>
-                    <li><a href="#about">~/about</a></li>
-                    <li><a href="#experience">~/experience</a></li>
-                    <li><a href="#projects">~/projects</a></li>
-                    <li><a href="#contact">~/contact</a></li>
-                </ul>
-            </nav>
-        </header>
+          </div>
 
-        <main>
-            <section id="home" class="active-section">
-                <div class="terminal-content">
-                    <div class="typing-animation">
-                        <span class="prompt">$</span> <span class="command">whoami</span>
-                        <div class="response">
-                            <h1>Game Producer</h1>
-                            <p class="subtitle">Crafting Interactive Experiences for <span class="highlight">10+
-                                    Years</span></p>
-                        </div>
-                        <span class="prompt">$</span> <span class="command">cat skills.txt</span>
-                        <div class="response skills">
-                            <span class="skill">Game Design</span>
-                            <span class="skill">Project Management</span>
-                            <span class="skill">Team Leadership</span>
-                            <span class="skill">Agile/Scrum</span>
-                            <span class="skill">Game Development</span>
-                            <span class="skill">Quality Assurance</span>
-                            <span class="skill">Budget Planning</span>
-                            <span class="skill">Risk Management</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="about">
-                <div class="terminal-content">
-                    <span class="prompt">$</span> <span class="command">cat about.md</span>
-                    <div class="response">
-                        <h2>~/about</h2>
-                        <div class="about-content">
-                            <div class="about-text">
-                                <p>Professional game producer with over a decade of experience in the gaming industry.
-                                    I've led teams to deliver multiple titles and innovative mobile experiences that
-                                    have captured the hearts of gamers worldwide.</p>
-                                <p>In my free time, I develop indie games as a passion project, experimenting with new
-                                    gameplay mechanics and storytelling techniques.</p>
-                                <p>I thrive in the intersection of creativity and technology, constantly pushing the
-                                    boundaries of what's possible in interactive entertainment.</p>
-                            </div>
-                            <div class="stats">
-                                <div class="stat">
-                                    <div class="stat-value">10+</div>
-                                    <div class="stat-label">Years in Industry</div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-value">20+</div>
-                                    <div class="stat-label">Shipped Titles</div>
-                                </div>
-                                <div class="stat">
-                                    <div class="stat-value">5+</div>
-                                    <div class="stat-label">Indie Projects</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience">
-                <div class="terminal-content">
-                    <span class="prompt">$</span> <span class="command">ls -la experience/</span>
-                    <div class="response">
-                        <h2>~/experience</h2>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">2022 - Present</div>
-                                <div class="timeline-content">
-                                    <h3>VR Games QA</h3>
-                                    <p class="company">Halfbrick</p>
-                                    <p>Testing VR games and ensuring they meet quality standards.</p>
-                                    <ul>
-                                        <li>Ensure the quality of the game is met</li>
-                                        <li>Create test cases and test plans</li>
-                                        <li>Optimize pipeline for testing and release VR Games</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2021 - 2022</div>
-                                <div class="timeline-content">
-                                    <h3>Senior Game Producer</h3>
-                                    <p class="company">Gear Games</p>
-                                    <p>Leading a team of 15+ developers to create a portal for an on-going game.</p>
-                                    <ul>
-                                        <li>Boosted Revenue by 20%</li>
-                                        <li>Implemented agile methodologies that increased team productivity by 35%</li>
-                                        <li>Worked with Product to define requirements and scope</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2018 - 2021</div>
-                                <div class="timeline-content">
-                                    <h3>Game Producer</h3>
-                                    <p class="company">Gear Games</p>
-                                    <p>Produced a variety of games across different genres and platforms.</p>
-                                    <ul>
-                                        <li>Manage the production pipeline from PRD to release</li>
-                                        <li>Coordinated cross-functional teams across 3 international studios</li>
-                                        <li>Involve with marketing team to create marketing materials</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2014 - 2018</div>
-                                <div class="timeline-content">
-                                    <h3>QA/QA Manager</h3>
-                                    <p class="company">Gear Games</p>
-                                    <p>Quality Assurance and QA Manager</p>
-                                    <ul>
-                                        <li>Doing manual testing on a big varity of games</li>
-                                        <li>Creating test cases and test plans</li>
-                                        <li>Making sure the team understand the tasks and deliver them</li>
-                                        <li>Ensure the quality of the game is met</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects">
-                <div class="terminal-content">
-                    <span class="prompt">$</span> <span class="command">find ./projects -type f -name "*.game" |
-                        sort</span>
-                    <div class="response">
-                        <h2>~/projects</h2>
-                        <div class="projects-grid">
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <h3>WWE Champions</h3>
-                                    <span class="project-tag professional">Professional</span>
-                                </div>
-                                <p>WWE Champions is a WWE-themed match-3 that puts players in the shoes of WWE
-                                    wrestlers.</p>
-                                <div class="project-tech">
-                                    <span>Unity</span>
-                                    <span>Mobile/PC</span>
-                                    <span>Match-3</span>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <h3>Thrill of The Fight 2</h3>
-                                    <span class="project-tag professional">Professional</span>
-                                </div>
-                                <p>A Multiplayer Boxing VR game that has the most authentic fighting experience</p>
-                                <div class="project-tech">
-                                    <span>Unity</span>
-                                    <span>VR</span>
-                                    <span>Competitive</span>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <h3>RPS Hero</h3>
-                                    <span class="project-tag hobby">Hobby</span>
-                                </div>
-                                <p>A roguelike RPG game that has a Rock Paper Scissors mechanic with Don't Starve
-                                    inspired theme</p>
-                                <div class="project-tech">
-                                    <span>HTML5</span>
-                                    <span>JavaScript</span>
-                                    <span>Indie</span>
-                                </div>
-                            </div>
-                            <div class="project-card">
-                                <div class="project-header">
-                                    <h3>Nightmare Garden</h3>
-                                    <span class="project-tag hobby">Hobby</span>
-                                </div>
-                                <p>A tower defense 2D game</p>
-                                <div class="project-tech">
-                                    <span>Unity</span>
-                                    <span>Mobile</span>
-                                    <span>Tower Defense</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact">
-                <div class="terminal-content">
-                    <span class="prompt">$</span> <span class="command">echo "Let's connect" > /dev/contact</span>
-                    <div class="response">
-                        <h2>~/contact</h2>
-                        <div class="contact-container">
-                            <p>Interested in collaboration or just want to chat about games? Reach out through any of
-                                these channels:</p>
-                            <div class="contact-links">
-                                <a href="mailto:me@longmaba.com" class="contact-link">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>me@longmaba.com</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/tuan-long-le-b929a082/" target="_blank"
-                                    class="contact-link">
-                                    <i class="fab fa-linkedin"></i>
-                                    <span>linkedin.com/in/tuan-long-le-b929a082</span>
-                                </a>
-                                <a href="https://x.com/longmaba" target="_blank" class="contact-link">
-                                    <i class="fab fa-x"></i>
-                                    <span>@longmaba</span>
-                                </a>
-                                <a href="https://github.com/longmaba" target="_blank" class="contact-link">
-                                    <i class="fab fa-github"></i>
-                                    <span>github.com/longmaba</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="terminal-prompt">
-                <span class="prompt">$</span> <span class="typing-cursor">|</span>
+          <div class="hero-photo-wrapper">
+            <div class="hero-orbit hero-orbit-1" aria-hidden="true"></div>
+            <div class="hero-orbit hero-orbit-2" aria-hidden="true"></div>
+            <div class="hero-photo-ring">
+              <div class="hero-photo-inner">
+                <img src="img/Screenshot 2026-03-30 221912.png" alt="Long Le — portrait photo" loading="eager">
+              </div>
             </div>
-            <div class="footer-text">
-                <p>Designed and coded with <span class="heart">♥</span> and a lot of <span class="coffee">☕</span></p>
-                <p>&copy; <span id="current-year">2025</span> Longmaba. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="mouse"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <p class="section-label">// About Me</p>
+          <h2 class="section-title">Crafting Experiences,<br>Shipping Products</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>game producer and QA leader</strong> with over a decade of experience shipping
+              live and premium titles across mobile and VR platforms.
+            </p>
+            <p>
+              My core strength is blending production discipline with quality strategy — aligning scope,
+              risk, and release plans while keeping cross-functional teams moving fast.
+            </p>
+            <p>
+              Beyond games, I've channeled my passion for technology into building
+              <strong>AI-powered applications</strong> that tackle real-world problems, from relationship 
+              management to secure developer tooling and ancient wisdom powered by modern AI.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-box">
+                <span class="stat-number" data-count="10">0</span>
+                <span class="stat-desc">Years in Industry</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number" data-count="20">0</span>
+                <span class="stat-desc">Shipped Titles</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number" data-count="6">0</span>
+                <span class="stat-desc">Indie & AI Projects</span>
+              </div>
             </div>
-        </footer>
-    </div>
+          </div>
 
-    <div class="background">
-        <div class="matrix-rain" id="matrix-canvas"></div>
-    </div>
+          <div class="about-highlights reveal">
+            <div class="highlight-card">
+              <div class="highlight-icon teal"><i class="fas fa-gamepad"></i></div>
+              <div>
+                <h4>Production Leadership</h4>
+                <p>Led 15+ person teams through full delivery cycles from concept to global launch.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon indigo"><i class="fas fa-robot"></i></div>
+              <div>
+                <h4>AI-Powered Building</h4>
+                <p>Built and shipped 3 AI SaaS products — from idea to paying customers.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon pink"><i class="fas fa-vr-cardboard"></i></div>
+              <div>
+                <h4>VR & Live Ops</h4>
+                <p>QA expertise across VR titles and high-cadence live service games.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience">
+      <div class="section-inner">
+        <div class="section-header center reveal">
+          <p class="section-label">// Experience</p>
+          <h2 class="section-title">Career Timeline</h2>
+          <p class="section-subtitle">A decade of shipping games — from QA trenches to production leadership.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Halfbrick -->
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2022 — Present</span>
+              <h3 class="tl-role">VR Games QA</h3>
+              <p class="tl-company">Halfbrick</p>
+              <p class="tl-desc">Leading quality execution for VR titles with a release-focused QA pipeline.</p>
+              <ul class="tl-bullets">
+                <li>Owned end-to-end QA coverage for gameplay, stability, and release quality</li>
+                <li>Built test plans and regression suites for high-risk systems</li>
+                <li>Used AI-assisted workflows to speed triage, reporting, and release readiness</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Senior Producer -->
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2021 — 2022</span>
+              <h3 class="tl-role">Senior Game Producer</h3>
+              <p class="tl-company">Gear Games</p>
+              <p class="tl-desc">Led a 15+ person team delivering features and systems for a live game platform.</p>
+              <ul class="tl-bullets">
+                <li>Improved product outcomes, including measurable revenue growth</li>
+                <li>Established agile production routines to increase delivery predictability</li>
+                <li>Partnered with Product and QA to define scope, quality bars, and release plans</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Producer -->
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2018 — 2021</span>
+              <h3 class="tl-role">Game Producer</h3>
+              <p class="tl-company">Gear Games</p>
+              <p class="tl-desc">Managed multi-discipline production from concept alignment to launch.</p>
+              <ul class="tl-bullets">
+                <li>Owned delivery pipeline from planning documents through release</li>
+                <li>Coordinated engineering, design, art, QA, and publishing across studios</li>
+                <li>Aligned production milestones with go-to-market and live ops needs</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- QA Manager -->
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2014 — 2018</span>
+              <h3 class="tl-role">QA / QA Manager</h3>
+              <p class="tl-company">Gear Games</p>
+              <p class="tl-desc">Built quality processes and led QA teams across multiple game projects.</p>
+              <ul class="tl-bullets">
+                <li>Directed manual and structured exploratory testing across titles</li>
+                <li>Created scalable test plans, cases, and defect workflows</li>
+                <li>Mentored QA members and improved execution clarity across teams</li>
+                <li>Established consistent quality gates before release milestones</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS / GAMES ========== -->
+    <section id="projects">
+      <div class="section-inner">
+        <div class="section-header center reveal">
+          <p class="section-label">// Projects</p>
+          <h2 class="section-title">Games I've Shipped</h2>
+          <p class="section-subtitle">Professional titles and indie experiments — from match-3 to VR boxing.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pro">Professional</button>
+          <button class="filter-btn" data-filter="indie">Indie</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- WWE Champions -->
+          <div class="project-card reveal" data-category="pro">
+            <div class="project-card-header">
+              <h3>WWE Champions</h3>
+              <span class="project-badge pro">Professional</span>
+            </div>
+            <div class="project-card-body">
+              <p>A WWE-themed match-3 RPG that puts players in the shoes of WWE wrestlers. Massive live-service
+                game with millions of players worldwide.</p>
+              <div class="project-tags">
+                <span>Unity</span><span>Mobile / PC</span><span>Match-3 RPG</span><span>Live Ops</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thrill of the Fight 2 -->
+          <div class="project-card reveal" data-category="pro">
+            <div class="project-card-header">
+              <h3>Thrill of The Fight 2</h3>
+              <span class="project-badge pro">Professional</span>
+            </div>
+            <div class="project-card-body">
+              <p>A multiplayer boxing VR game delivering the most authentic virtual fighting experience on the
+                market.</p>
+              <div class="project-tags">
+                <span>Unity</span><span>VR</span><span>Multiplayer</span><span>Fighting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Marvel Snap -->
+          <div class="project-card reveal" data-category="pro">
+            <div class="project-card-header">
+              <h3>Marvel Snap</h3>
+              <span class="project-badge pro">Professional</span>
+            </div>
+            <div class="project-card-body">
+              <p>A fast-paced competitive card game with deep systems, event cadence, and quality-sensitive live
+                updates.</p>
+              <div class="project-tags">
+                <span>Mobile</span><span>Card Battler</span><span>Live Service</span><span>Competitive</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Angry Bird Hatchlings -->
+          <div class="project-card reveal" data-category="pro">
+            <div class="project-card-header">
+              <h3>Angry Birds Hatchlings</h3>
+              <span class="project-badge pro">Professional</span>
+            </div>
+            <div class="project-card-body">
+              <p>A casual puzzle and collection game focused on playful progression, feature polish, and live
+                quality iteration.</p>
+              <div class="project-tags">
+                <span>Mobile</span><span>Puzzle</span><span>Live Ops</span><span>Casual</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RPS Hero -->
+          <div class="project-card reveal" data-category="indie">
+            <div class="project-card-header">
+              <h3>RPS Hero</h3>
+              <span class="project-badge indie">Indie</span>
+            </div>
+            <div class="project-card-body">
+              <p>A roguelike RPG with a Rock-Paper-Scissors combat mechanic and Don't Starve-inspired visual
+                theme.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>JavaScript</span><span>Roguelike</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nightmare Garden -->
+          <div class="project-card reveal" data-category="indie">
+            <div class="project-card-header">
+              <h3>Nightmare Garden</h3>
+              <span class="project-badge indie">Indie</span>
+            </div>
+            <div class="project-card-body">
+              <p>A tower defense 2D game where players defend their garden from nightmarish creatures.</p>
+              <div class="project-tags">
+                <span>Unity</span><span>Mobile</span><span>Tower Defense</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lights Out -->
+          <div class="project-card reveal" data-category="indie">
+            <div class="project-card-header">
+              <h3>Lights Out</h3>
+              <span class="project-badge indie">Indie</span>
+            </div>
+            <div class="project-card-body">
+              <p>A brain-teasing number equalizer puzzle — click tiles to redistribute values and clear the board.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>JavaScript</span><span>Puzzle</span>
+              </div>
+              <a href="https://longmaba.github.io/lights-out/" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">
+                Play Now <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Driller -->
+          <div class="project-card reveal" data-category="indie">
+            <div class="project-card-header">
+              <h3>Driller</h3>
+              <span class="project-badge indie">Indie</span>
+            </div>
+            <div class="project-card-body">
+              <p>An arcade puzzle game built with Phaser — drill through colored blocks across hand-crafted levels.</p>
+              <div class="project-tags">
+                <span>Phaser</span><span>JavaScript</span><span>Arcade</span>
+              </div>
+              <a href="https://longmaba.github.io/driller/" target="_blank" rel="noopener noreferrer"
+                class="project-link-btn">
+                Play Now <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AI APPS ========== -->
+    <section id="ai-apps">
+      <div class="section-inner">
+        <div class="section-header center reveal">
+          <p class="section-label">// AI Apps</p>
+          <h2 class="section-title">AI Products I've Built</h2>
+          <p class="section-subtitle">Side-project SaaS apps powered by AI — shipped, live, and growing.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="ai-apps-grid">
+          <!-- Perlationship -->
+          <div class="ai-card reveal">
+            <div class="ai-card-icon"><i class="fas fa-heart"></i></div>
+            <h3>Perlationship</h3>
+            <p class="ai-tagline">AI-Powered Personal Relationship Manager</p>
+            <p class="ai-desc">
+              Transform how you connect with family, friends, and colleagues. Get AI-powered insights,
+              personalized suggestions, and never miss another important moment.
+            </p>
+            <a href="https://perlationship.com" target="_blank" rel="noopener noreferrer" class="ai-link">
+              Visit Site <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <!-- EzEnv -->
+          <div class="ai-card reveal">
+            <div class="ai-card-icon"><i class="fas fa-lock"></i></div>
+            <h3>EzEnv</h3>
+            <p class="ai-tagline">Secure Environment Variable Management</p>
+            <p class="ai-desc">
+              Stop sharing .env files via Slack or email. Centralized, secure platform for managing secrets
+              with team RBAC, API access, and AES-256 encryption.
+            </p>
+            <a href="https://ezenv.dev" target="_blank" rel="noopener noreferrer" class="ai-link">
+              Visit Site <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <!-- BaziReader -->
+          <div class="ai-card reveal">
+            <div class="ai-card-icon"><i class="fas fa-yin-yang"></i></div>
+            <h3>BaziReader</h3>
+            <p class="ai-tagline">AI-Powered BaZi (八字) Reading</p>
+            <p class="ai-desc">
+              Discover your destiny with AI-driven Chinese astrology. Combines ancient BaZi wisdom with
+              modern machine learning for accurate, instant personality and life-path insights.
+            </p>
+            <a href="https://bazireader.com" target="_blank" rel="noopener noreferrer" class="ai-link">
+              Visit Site <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="section-header center reveal">
+          <p class="section-label">// Contact</p>
+          <h2 class="section-title">Let's Build Something</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-content reveal">
+          <p>
+            Interested in collaboration, production leadership, or just want to chat about games and AI?
+            Reach out through any of these channels.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:me@longmaba.com" class="contact-link">
+              <i class="fas fa-envelope"></i> me@longmaba.com
+            </a>
+            <a href="https://www.linkedin.com/in/tuan-long-le-b929a082/" target="_blank" rel="noopener noreferrer"
+              class="contact-link">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://x.com/longmaba" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-x-twitter"></i> @longmaba
+            </a>
+            <a href="https://github.com/longmaba" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>Designed & coded with <span class="heart">♥</span> and a lot of ☕ — © <span id="current-year">2025</span>
+          Long Le</p>
+        <div class="footer-socials">
+          <a href="https://github.com/longmaba" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/tuan-long-le-b929a082/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/longmaba" target="_blank" rel="noopener noreferrer" aria-label="X"><i
+              class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- App JS -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
